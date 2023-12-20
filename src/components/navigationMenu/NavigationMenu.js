@@ -4,7 +4,14 @@ import { Link } from "react-router-dom"
 
 const NavigationMenu = () => {
   return (
-    <Flex position={'fixed'} w={'100%'} top={0} bgColor={'white'} zIndex={'999'} >
+    <Flex
+      position={"fixed"}
+      w={"100%"}
+      top={0}
+      bgColor={"white"}
+      zIndex={"999"}
+      boxShadow={"sm"}
+    >
       <Flex w={"100%"} flexDirection={"column"} alignItems={"center"}>
         <Flex
           justifyContent={"space-between"}
@@ -15,10 +22,15 @@ const NavigationMenu = () => {
           gap={6}
         >
           <Img src="./assets/DipologBookingHub1.webp" maxW={"300px"} />
-          <Flex gap={8} alignItems={'center'}>
-            <Link to={'/'}><Text>Home</Text></Link>
-            <Link to={'/services'}><Text>Services</Text></Link>
-            
+          <Flex gap={8} alignItems={"center"}>
+            <Link to={"/"}>
+              <Text>Home</Text>
+            </Link>
+            <Text>Locations</Text>
+            <Link to={"/services"}>
+              <Text>Services</Text>
+            </Link>
+
             <Text>Contact Us</Text>
             <Button colorScheme="twitter">Login</Button>
           </Flex>

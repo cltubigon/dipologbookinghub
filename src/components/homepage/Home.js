@@ -45,7 +45,7 @@ const Home = () => {
             pr={"350px"}
             letterSpacing={"-1.5px"}
           >
-            Dipolog's Premier Solution for All Your Booking Needs!ss
+            Dipolog's Premier Solution for All Your Booking Needs!sss
           </Heading>
           <Divider
             w={"10%"}
